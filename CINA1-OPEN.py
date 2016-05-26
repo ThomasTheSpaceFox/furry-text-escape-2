@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # coding=utf-8
 # CINAMATIC SEQUENCE 1: Opening
+d = open('./art/BUN_MINI.TCR', 'r')
+bunny_mini = d.read()
+e = open('./art/FOX_MINI.TCR', 'r')
+fox_mini = e.read()
 f = open('./art/opening1a-b.TCR', 'r')
 tcr_contents = f.read()
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
@@ -11,8 +15,17 @@ get in these situations...'''
 nullstuff = raw_input('\n')
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
 print (
-'''Once more you are trapped. "at least this time..." you say to 
-yourself. "the room isn't dark."'''
+'''Once more you are trapped.'''
+)
+nullstuff = raw_input('\n')
+print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
+print (
+fox_mini + '''"at least this time..."'''
+)
+nullstuff = raw_input('\n')
+print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
+print (
+fox_mini + '''"the room isn't dark."'''
 )
 nullstuff = raw_input('\n')
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
@@ -31,25 +44,30 @@ print (
 nullstuff = raw_input('\n')
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
 print (
-'''"Hi!" the bunny said, obviously glad to see you.'''
+bunny_mini + '''"Hi!"'''
 )
 nullstuff = raw_input('\n')
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
 print (
-'''you:"umm.. hello? Can you get me out of here?"'''
+fox_mini + '''"umm.. hello? Can you get me out of here?"'''
 )
 nullstuff = raw_input('\n')
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
 print (
-'''bunny:"Not really, But i can let you out of this room so we can
+bunny_mini + '''"Not really, But i can let you out of this room so we can
 get out of this crazy place!"'''
 )
 nullstuff = raw_input('\n')
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
 f.close()
 print (
-'''bunny:"I'd stand back if i were you!"
-You:"ok..."'''
+bunny_mini + '''"I'd stand back if i were you!"'''
+)
+nullstuff = raw_input('\n')
+print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
+f.close()
+print (
+fox_mini + '''"ok.."'''
 )
 nullstuff = raw_input('\n')
 f = open('./art/FX-CRASH.TCR', 'r')
@@ -64,13 +82,13 @@ f = open('./art/opening1a-c.TCR', 'r')
 tcr_contents = f.read()
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
 print (
-'''You:"Did... Did you just smash the door out of the wall! o_o"'''
+fox_mini + '''"Did... Did you just smash the door out of the wall! o_o"'''
 )
 nullstuff = raw_input('\n')
 print(chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
 f.close()
 print (
-'''Bunny:"Yes, yes i did. Now lets get going!"'''
+bunny_mini + '''"Yes, yes i did. Now lets get going!"'''
 )
 nullstuff = raw_input('\n')
 f = open('./art/opening1b.TCR', 'r')
@@ -97,3 +115,5 @@ print (
 '''Only time will tell...'''
 )
 nullstuff = raw_input('\n')
+d.close()
+e.close()
