@@ -2,8 +2,8 @@
 WHEREAMI="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd && echo)"
 cd $WHEREAMI
 #T-IMG -Terminal Image System to Raw Escape code translator.
-#V1.0
-#(c) 2015 Thomas Leathers
+#V1.1
+#(c) 2015-2016 Thomas Leathers
 #
 #
 # first color chart
@@ -73,70 +73,70 @@ cd $WHEREAMI
 #N=T-Yellow
 #L=Light Black
 
-RED='\033[0;41m'
-URED='\033[0;40m\033[1;31m'
-MRED='\033[0;41m\033[1;37m'
-SRED='\033[0;101m'
-TRED='\033[0;91m'
-BLUE='\033[0;44m'
-UBLUE='\033[0;40m\033[1;34m'
-MBLUE='\033[0;44m\033[1;37m'
-SBLUE='\033[0;104m'
-TBLUE='\033[0;94m'
-GREEN='\033[0;42m'
-UGREEN='\033[0;40m\033[1;32m'
-MGREEN='\033[0;42m\033[1;37m'
-SGREEN='\033[0;102m'
-TGREEN='\033[0;92m'
-ORANGE='\033[0;43m\033[1;31m'
-SORANGE='\033[0;103m\033[1;91m'   
-GREY='\033[0;47m\033[1;30m'
-LGREY='\033[0;47m\033[1;30m'
-DGREY='\033[0;40m\033[1;37m'
-WH='\033[0;47m'
-TWH='\033[0;97m'
-SWH='\033[0;107m'
-BL='\033[0;40m'
-TBL='\033[0;30m'
-LBL='\033[0;100m'
-DY='\033[0;40m\033[1;33m'
-DR='\033[0;40m\033[1;31m'
-BROWN='\033[0;41m\033[1;32m'
-TAN='\033[0;45m\033[1;33m'
-bv='\033[0;44m\033[1;35m'
-rv='\033[0;44m\033[1;31m'
-DC='\033[0;40m\033[1;36m'
-DB='\033[0;40m\033[1;34m'
-LB='\033[0;47m\033[1;34m'
-LY='\033[0;47m\033[1;33m'
-BC='\033[0;44m\033[1;36m'
-PINK='\033[0;47m\033[1;31m'
-LC='\033[0;47m\033[1;36m'
-YELLOW='\033[0;43m'
-UYELLOW='\033[0;40m\033[1;33m'
-MYELLOW='\033[0;43m\033[1;37m'
-SYELLOW='\033[0;103m'
-TYELLOW='\033[0;93m'
-CYAN='\033[0;46m'
-UCYAN='\033[0;40m\033[1;36m'
-MCYAN='\033[0;46m\033[1;37m'
-SCYAN='\033[0;106m'
-TCYAN='\033[0;96m'
-OR='\033[0;41m\033[1;33m'
-OY='\033[0;43m\033[1;31m'
-CG='\033[0;46m\033[1;32m'
-BG='\033[0;44m\033[1;32m'
-YG='\033[0;43m\033[1;32m'
-DG='\033[0;40m\033[1;32m'
-LG='\033[0;47m\033[1;32m'
-PURPLE='\033[0;45m'
-UPURPLE='\033[0;40m\033[1;35m'
-MPURPLE='\033[0;45m\033[1;37m'
-LPURPLE='\033[0;47m\033[1;35m'
-SPURPLE='\033[0;105m'
-TPURPLE='\033[0;95m'
+RED='[0;41m'
+URED='[0;40m[1;31m'
+MRED='[0;41m[1;37m'
+SRED='[0;101m'
+TRED='[0;91m'
+BLUE='[0;44m'
+UBLUE='[0;40m[1;34m'
+MBLUE='[0;44m[1;37m'
+SBLUE='[0;104m'
+TBLUE='[0;94m'
+GREEN='[0;42m'
+UGREEN='[0;40m[1;32m'
+MGREEN='[0;42m[1;37m'
+SGREEN='[0;102m'
+TGREEN='[0;92m'
+ORANGE='[0;43m[1;31m'
+SORANGE='[0;103m[1;91m'   
+GREY='[0;47m[1;30m'
+LGREY='[0;47m[1;30m'
+DGREY='[0;40m[1;37m'
+WH='[0;47m'
+TWH='[0;97m'
+SWH='[0;107m'
+BL='[0;40m'
+TBL='[0;30m'
+LBL='[0;100m'
+DY='[0;40m[1;33m'
+DR='[0;40m[1;31m'
+BROWN='[0;41m[1;32m'
+TAN='[0;45m[1;33m'
+bv='[0;44m[1;35m'
+rv='[0;44m[1;31m'
+DC='[0;40m[1;36m'
+DB='[0;40m[1;34m'
+LB='[0;47m[1;34m'
+LY='[0;47m[1;33m'
+BC='[0;44m[1;36m'
+PINK='[0;47m[1;31m'
+LC='[0;47m[1;36m'
+YELLOW='[0;43m'
+UYELLOW='[0;40m[1;33m'
+MYELLOW='[0;43m[1;37m'
+SYELLOW='[0;103m'
+TYELLOW='[0;93m'
+CYAN='[0;46m'
+UCYAN='[0;40m[1;36m'
+MCYAN='[0;46m[1;37m'
+SCYAN='[0;106m'
+TCYAN='[0;96m'
+OR='[0;41m[1;33m'
+OY='[0;43m[1;31m'
+CG='[0;46m[1;32m'
+BG='[0;44m[1;32m'
+YG='[0;43m[1;32m'
+DG='[0;40m[1;32m'
+LG='[0;47m[1;32m'
+PURPLE='[0;45m'
+UPURPLE='[0;40m[1;35m'
+MPURPLE='[0;45m[1;37m'
+LPURPLE='[0;47m[1;35m'
+SPURPLE='[0;105m'
+TPURPLE='[0;95m'
 # reset command (used at end of script to return to normal teminal colors)
-RESET='\033[0m'
+RESET='[0m'
 # file to draw
 # BE SURE TO CONFIGURE THIS SECTION CORRECTLY!
 #
@@ -365,15 +365,12 @@ until [ "$current" = "!" ]; do
   CNT1=$(($line+1))
   line=$CNT1
   if [ "$(sed ''$line'q;d' $file)" = "!" ]; then
-    echo ""
+    echo -n ""
   else
     echo ""
-#    echo "
-#echo '"' '"'"
   fi
 done
 #echo -n "echo -e -n "'"'
-echo -n ${RESET}
 #echo -n '"'
 
 }
