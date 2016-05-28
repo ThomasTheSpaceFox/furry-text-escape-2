@@ -39,16 +39,24 @@ while n.strip()!="4":
 		tcr_contents = t.read()
 		print (chr(27) + "[2J" + chr(27) + "[H" + tcr_contents + '''"which way?"
 ''')
-		t.close()
-		while episodeselection.strip()!="4":
+		
+		while episodeselection.strip()!="5":
 			if tprint2==('1'):
+				print(chr(27) + "[2J" + chr(27) + "[H")
+				episodeselection = ('null')
+				tprint2 = ('1')
+				t = open('./art/EPSEL-BANNER.TCR', 'r')
+				tcr_contents = t.read()
+				print (chr(27) + "[2J" + chr(27) + "[H" + tcr_contents + '''"which way?"''')
+				t.close()
 				tprint2 = ('0')
 				print (
 				'''episode selection:
 1: episode 1 -intro sequence only-
  : episode 2 -coming soon-
  : episode 3 -coming soon-
-4: return to main menu.'''
+4: BONUS! Playable flashback to Furry Text Escape 1!
+5: return to main menu.'''
 				)
 			
 			episodeselection = raw_input('choice:')
@@ -56,6 +64,11 @@ while n.strip()!="4":
 			if episodeselection=="1":
 				print(chr(27) + "[2J" + chr(27) + "[H")
 				execfile("EP1-intro.py")
+				print(chr(27) + "[2J" + chr(27) + "[H")
+				tprint2 = ('1')
+			if episodeselection=="4":
+				print(chr(27) + "[2J" + chr(27) + "[H")
+				execfile("DARKROOM.py")
 				print(chr(27) + "[2J" + chr(27) + "[H")
 				tprint2 = ('1')
 		print(chr(27) + "[2J" + chr(27) + "[H")
