@@ -7,6 +7,8 @@ d = open('./art/BUN_MINI.TCR', 'r')
 bunny_mini = d.read()
 e = open('./art/FOX_MINI.TCR', 'r')
 fox_mini = e.read()
+i = open('./art/inv_banner.TCR', 'r')
+inv_banner = i.read()
 print (fox_mini + '''*tailswish*, *facepaw*, "How do i get in these situations?"''')
 nullstuff = raw_input("...")
 print (bunny_mini + '''so you are a male fox? and you are stuck with me in a dark room.''')
@@ -35,7 +37,7 @@ will be shown again as well. Neat! E:D
 ''')
 
 def inventory_screen():
-	print (chr(27) + "[2J" + chr(27) + "[H")
+	print (chr(27) + "[2J" + chr(27) + "[H" + inv_banner)
 	print ('''---Inventory---''')
 	if gameitem_floppydisk==('1'):
 		print ('Security Floppy Disk: Yes')
@@ -64,7 +66,7 @@ the door appears to need some kind of disk key, judging by the disk drive.''')
 		manedrdraw = ('0')
 
 	inpt1 = raw_input(':')
-	print(chr(27) + "[2A")
+	#print(chr(27) + "[2A")
 	if inpt1==("box"):
 		if gameitem_toothbrush==('0'):
 			print ("the box is locked. it has an old skeleton key lock.")
@@ -92,3 +94,7 @@ the door appears to need some kind of disk key, judging by the disk drive.''')
 	if inpt1==("help"):
 		showhelpscreen()
 nullstuff = raw_input(bunny_mini + '''The door opened! You escaped! Congrads! Thanks For Playing!''')
+d.close()
+e.close()
+v.close()
+i.close()

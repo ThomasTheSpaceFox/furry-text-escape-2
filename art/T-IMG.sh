@@ -142,7 +142,7 @@ RESET='\033[0m'
 #
 #uncomment this line, and point it to the T-IMG image you wish to draw,
 #such as testing to see how a T-IMG image looks:
-file="$WHEREAMI/DARKROOM-REVAMPED.TIMG"
+file="$WHEREAMI/inv_banner.TIMG"
 #or uncomment this line to call T-IMG.sh from within another script/terminal:
 #file="$1"
 #comment out this line to prevent T-IMG from printing the title.
