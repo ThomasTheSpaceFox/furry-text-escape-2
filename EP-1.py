@@ -6,6 +6,8 @@ gameitem_crowbar = ('0')
 gameitem_oldkey = ('0')
 d = open('./art/BUN_MINI.TCR', 'r')
 bunny_mini = d.read()
+i = open('./art/inv_banner.TCR', 'r')
+inv_banner = i.read()
 
 def showhelpscreen():
 	print (bunny_mini + 
@@ -26,7 +28,7 @@ will be shown again as well. Neat! E:D
 ''')
 
 def inventory_screen():
-	print (chr(27) + "[2J" + chr(27) + "[H")
+	print (chr(27) + "[2J" + chr(27) + "[H" + inv_banner)
 	print ('''---Inventory---''')
 	if gameitem_REDkeycard==('1'):
 		print ('Red Keycard: Yes')
@@ -59,7 +61,7 @@ to the next room.''')
 		manedrdraw = ('0')
 
 	inpt1 = raw_input(':')
-	print(chr(27) + "[2A")
+	#print(chr(27) + "[2A")
 	if inpt1==("cabinet"):
 		if gameitem_crowbar==('0'):
 			print ("the cabinet is locked.")
@@ -86,3 +88,7 @@ to the next room.''')
 	if inpt1==("help"):
 		showhelpscreen()
 nullstuff = raw_input(bunny_mini + '''room 1 completed! 3 to go! lets get that RED KEYCARD!''')
+
+i.close()
+d.close()
+v.close()

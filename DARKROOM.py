@@ -9,6 +9,11 @@ e = open('./art/FOX_MINI.TCR', 'r')
 fox_mini = e.read()
 i = open('./art/inv_banner.TCR', 'r')
 inv_banner = i.read()
+#the room is dark and cold
+print (fox_mini + '''*shiver* "Its so cold!"''')
+nullstuff = raw_input("...")
+print (bunny_mini + '''Oh, hello.''')
+nullstuff = raw_input("...")
 print (fox_mini + '''*tailswish*, *facepaw*, "How do i get in these situations?"''')
 nullstuff = raw_input("...")
 print (bunny_mini + '''so you are a male fox? and you are stuck with me in a dark room.''')
@@ -34,6 +39,7 @@ besides object names, you can use these other commands too.
 [look]: this clears the screen. the image and the room description
 will be shown again as well. Neat! E:D
 [inventory]: shows the inventory.
+[hint]: get some hints.
 ''')
 
 def inventory_screen():
@@ -54,6 +60,14 @@ tcr_contents = v.read()
 
 def drax_mane_TCR():
 	print (chr(27) + "[2J" + chr(27) + "[H" + tcr_contents)
+
+hinttextis = ('''the box has a old skeleton key lock.
+I bet that a good lock pick could unlock it!
+but what to use?
+And how are we going to open that locked door?''')
+
+def showhintscreen():
+	print (bunny_mini + hinttextis)
 
 se_1_complete = ('0')
 inpt1 = ('null')
@@ -93,6 +107,8 @@ the door appears to need some kind of disk key, judging by the disk drive.''')
 	
 	if inpt1==("help"):
 		showhelpscreen()
+	if inpt1==("hint"):
+		showhintscreen()
 nullstuff = raw_input(bunny_mini + '''The door opened! You escaped! Congrads! Thanks For Playing!''')
 d.close()
 e.close()
