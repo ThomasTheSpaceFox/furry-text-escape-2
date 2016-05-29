@@ -52,9 +52,9 @@ while n.strip()!="4":
 				tprint2 = ('0')
 				print (
 				'''episode selection:
-1: episode 1 -intro sequence only-
- : episode 2 -coming soon-
- : episode 3 -coming soon-
+1: episode 1: maintenance duties (RED)
+ : episode 2 -coming soon- (BLUE)
+ : episode 3 -coming soon- (GREEN)
 4: BONUS! Playable flashback to Furry Text Escape 1!
 5: return to main menu.'''
 				)
@@ -64,6 +64,8 @@ while n.strip()!="4":
 			if episodeselection=="1":
 				print(chr(27) + "[2J" + chr(27) + "[H")
 				execfile("EP1-intro.py")
+				execfile("EP-1.py")
+				execfile("EP1-outro.py")
 				print(chr(27) + "[2J" + chr(27) + "[H")
 				tprint2 = ('1')
 			if episodeselection=="4":
