@@ -243,7 +243,7 @@ until [ "$current" = "!" ]; do
     if [ "$f" = "r" ]; then
       echo -e -n "${DR}${MIX}"
     fi
-    if [ "$f" = "F" ]; then
+    if [ "$f" = "F" ]; then #
       echo -e -n "${BROWN}${MIX2}"
     fi
     if [ "$f" = "f" ]; then
@@ -253,97 +253,97 @@ until [ "$current" = "!" ]; do
       echo -e -n "${DGREY}${MIX2}"
     fi
     if [ "$f" = "K" ]; then
-      echo -e -n "${LGREY}${MIX2}"
+      echo -e -n "${LGREY}${MIX2}"  #
     fi
     if [ "$f" = "E" ]; then
       echo -e -n "${OR}${MIX2}"
     fi
     if [ "$f" = "e" ]; then
-      echo -e -n "${OY}${MIX2}"
+      echo -e -n "${OY}${MIX2}"  #
     fi
     if [ "$f" = "s" ]; then
-      echo -e -n "${SWH}${DRAW}"
+      echo -e -n "${SWH}${DRAW}"  #
     fi
     if [ "$f" = '_' ]; then
-      echo -e -n "${RESET}${DRAW}"
+      echo -e -n "${RESET}${DRAW}" #
     fi
     if [ "$f" = "M" ]; then
-      echo -e -n "${SRED}${DRAW}"
+      echo -e -n "${SRED}${DRAW}"  #
     fi
     if [ "$f" = "m" ]; then
-      echo -e -n "${SBLUE}${DRAW}"
+      echo -e -n "${SBLUE}${DRAW}" #
     fi
     if [ "$f" = "I" ]; then
-      echo -e -n "${SGREEN}${DRAW}"
+      echo -e -n "${SGREEN}${DRAW}" #
     fi
     if [ "$f" = "i" ]; then
-      echo -e -n "${SORANGE}${MIX}"
+      echo -e -n "${SORANGE}${MIX}" #
     fi
     if [ "$f" = "u" ]; then
-      echo -e -n "${SCYAN}${DRAW}"
+      echo -e -n "${SCYAN}${DRAW}"#
     fi
     if [ "$f" = "U" ]; then
-      echo -e -n "${SPURPLE}${DRAW}"
+      echo -e -n "${SPURPLE}${DRAW}"#
     fi
     if [ "$f" = "W" ]; then
-      echo -e -n "${SYELLOW}${DRAW}"
+      echo -e -n "${SYELLOW}${DRAW}"#
     fi
     if [ "$f" = "w" ]; then
-      echo -e -n "${URED}${MIX2}"
+      echo -e -n "${URED}${MIX2}"#
     fi
     if [ "$f" = "H" ]; then
-      echo -e -n "${UBLUE}${MIX2}"
+      echo -e -n "${UBLUE}${MIX2}"#
     fi
     if [ "$f" = "h" ]; then
-      echo -e -n "${UGREEN}${MIX2}"
+      echo -e -n "${UGREEN}${MIX2}"#
     fi
     if [ "$f" = "2" ]; then
-      echo -e -n "${UCYAN}${MIX2}"
+      echo -e -n "${UCYAN}${MIX2}"#
     fi
     if [ "$f" = "3" ]; then
-      echo -e -n "${UPURPLE}${MIX2}"
+      echo -e -n "${UPURPLE}${MIX2}"#
     fi
     if [ "$f" = "4" ]; then
-      echo -e -n "${UYELLOW}${MIX2}"
+      echo -e -n "${UYELLOW}${MIX2}"#
     fi
     if [ "$f" = "5" ]; then
-      echo -e -n "${MRED}${MIX2}"
+      echo -e -n "${MRED}${MIX2}"#
     fi
     if [ "$f" = "6" ]; then
-      echo -e -n "${MBLUE}${MIX2}"
+      echo -e -n "${MBLUE}${MIX2}"#
     fi
     if [ "$f" = "7" ]; then
-      echo -e -n "${MGREEN}${MIX2}"
+      echo -e -n "${MGREEN}${MIX2}"#
     fi
     if [ "$f" = "8" ]; then
-      echo -e -n "${MCYAN}${MIX2}"
+      echo -e -n "${MCYAN}${MIX2}"#
     fi
     if [ "$f" = "9" ]; then
-      echo -e -n "${MPURPLE}${MIX2}"
+      echo -e -n "${MPURPLE}${MIX2}"#
     fi
     if [ "$f" = "S" ]; then
-      echo -e -n "${MYELLOW}${MIX2}"
+      echo -e -n "${MYELLOW}${MIX2}"#
     fi
     if [ "$f" = "n" ]; then
-      echo -e -n "${LPURPLE}${MIX}"
+      echo -e -n "${LPURPLE}${MIX}"#
     fi
     if [ "$f" = "t" ]; then
-      echo -e -n "${TRED}${MIX}"
+      echo -e -n "${TRED}${MIX}"#
     fi
     if [ "$f" = "o" ]; then
-      echo -e -n "${TBLUE}${MIX}"
+      echo -e -n "${TBLUE}${MIX}"#
     fi
     if [ "$f" = "a" ]; then
-      echo -e -n "${TGREEN}${MIX}"
+      echo -e -n "${TGREEN}${MIX}"#
     fi
     if [ "$f" = "T" ]; then
-      echo -e -n "${TBL}${MIX}"
+      echo -e -n "${TBL}${MIX}"#
     fi
     if [ "$f" = "j" ]; then
-      echo -e -n "${TWH}${MIX}"
+      echo -e -n "${TWH}${MIX}"#
     fi
     if [ "$f" = "D" ]; then
-      echo -e -n "${TCYAN}${MIX}"
+      echo -e -n "${TCYAN}${MIX}"#
     fi
     if [ "$f" = "J" ]; then
       echo -e -n "${TPURPLE}${MIX}"
